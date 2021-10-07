@@ -242,7 +242,6 @@ div.catalog-table-content::-webkit-scrollbar {
 div.catalog-table-content::-webkit-scrollbar-thumb {
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
 ::-webkit-input-placeholder {
