@@ -1,0 +1,196 @@
+.header {
+    background-image: url(../img/frame/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 458px;
+    position: relative;
+    &__bg-text {
+        position: absolute;
+        pointer-events: none;
+        right: 0;
+        top: 80px;
+        height: 450px;
+        & img {
+            height: 100%;
+            width: auto;
+        }
+    }
+    &-top {
+        position: relative;
+        z-index: 2;
+        &__inner {
+            padding: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__right {
+            display: flex;
+            align-items: center;
+        }
+        &__link {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            color: #23303F;
+            margin-left: 38px;
+            font-family: "Raleway Cyrillic";
+            &:hover {
+                color: #4B79ED;
+            }
+        }
+    }
+    &-bottom {
+        padding-top: 90px;
+        position: relative;
+        z-index: 2;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 70px;
+        line-height: 115%;
+        text-align: center;
+        color: #508CEC;
+    }
+    &__desc {
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        margin-top: 2px;
+        color: #FFFFFF;
+    }
+    &__btn {
+        border-radius: 10px;
+        margin: 42px auto 0;
+        width: 191px;
+        height: 63px;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    &__banner {
+        margin: 90px auto 0;
+        width: 850px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 20px;
+        & img {
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+}
+
+.header--blue {
+    padding-bottom: 80px;
+    background-image: url(../img/frame/header-bg2.png);
+    .header-top__link {
+        color: #fff;
+    }
+    .header-bottom {
+        padding-top: 30px;
+    }
+    .header__title {
+        color: #fff;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 80px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        &__bg-text {
+            height: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        padding-bottom: 370px;
+        &-bottom {
+            padding-top: 60px;
+        }
+        &__btn {
+            margin-top: 30px;
+        }
+        &__desc {
+            margin-top: 15px;
+        }
+        &__banner {
+            width: 100%;
+            margin-top: 70px;
+        }
+    }
+    .header--blue {
+        padding-bottom: 60px;
+        .header__title {
+            font-size: 42px;
+            line-height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        background-size: 1000% auto;
+        background-position: 0 0;
+        padding-bottom: 206px;
+        &__bg-text {
+            height: 100px;
+        }
+        &-top {
+            &__inner {
+                padding: 27px 0;
+            }
+            &__logo {
+                width: 180px;
+                & img {
+                    width: 100%;
+                }
+            }
+            &__link {
+                font-size: 13px;
+                line-height: 15px;
+                margin-left: 18px;
+            }
+        }
+        &-bottom {
+            padding-top: 20px;
+        }
+        &__title {
+            font-size: 33px;
+            line-height: 40px;
+        }
+        &__btn {
+            height: 48px;
+            margin-top: 24px;
+        }
+        &__desc {
+            font-size: 14px;
+            line-height: 22px;
+            & br {
+                display: none;
+            }
+        }
+        &__banner {
+            padding: 0 10px;
+            margin-top: 30px;
+        }
+    }
+    .header--blue {
+        padding-bottom: 30px;
+        background-image: url(../img/frame/header-bg2-mob.png);
+        background-size: 100% 100%;
+        .header__title {
+            font-size: 33px;
+            line-height: 40px;
+        }
+        &__bg-text {
+            height: 80px;
+            top: 120px;
+        }
+    }
+}
