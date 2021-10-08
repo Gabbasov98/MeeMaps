@@ -41,6 +41,13 @@
                 color: #4B79ED;
             }
         }
+        &__logo {
+            width: 210px;
+            display: block;
+            & img {
+                width: 100%;
+            }
+        }
     }
     &-bottom {
         padding-top: 90px;
@@ -85,6 +92,9 @@
 .header--blue {
     padding-bottom: 80px;
     background-image: url(../img/frame/header-bg2.png);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: auto 100% !important;
     .header-top__link {
         color: #fff;
     }
@@ -97,6 +107,14 @@
         font-size: 50px;
         line-height: 80px;
     }
+}
+
+.header--small {
+    padding-bottom: 0 !important;
+}
+
+.header--nobg {
+    background: unset;
 }
 
 @media screen and (max-width: 1200px) {
@@ -130,6 +148,9 @@
             font-size: 42px;
             line-height: 100%;
         }
+    }
+    .header--small {
+        background-size: 1900px auto;
     }
 }
 
@@ -191,6 +212,11 @@
         &__bg-text {
             height: 80px;
             top: 120px;
+        }
+    }
+    .header--small {
+        .header-top__inner {
+            padding: 15px 0;
         }
     }
 }

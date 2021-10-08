@@ -176,6 +176,9 @@
         display: flex;
         justify-content: space-between;
     }
+    &__left {
+        padding-top: 40px;
+    }
     &__title {
         font-weight: 900;
         font-size: 50px;
