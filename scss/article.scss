@@ -352,8 +352,11 @@
 }
 
 .articles {
-    background: linear-gradient(65.56deg, rgba(235, 241, 248, 0.49) 6.19%, #FFFFFF 100%);
+    background: url(../img/frame/article-bg2.png), linear-gradient(65.56deg, rgba(235, 241, 248, 0.49) 6.19%, #FFFFFF 100%);
+    background-repeat: no-repeat;
+    background-size: 2500px auto, 100% 100%;
     padding-bottom: 50px;
+    padding-top: 150px;
     &__item {
         position: relative;
         background: #FFFFFF;
@@ -558,6 +561,7 @@
     }
     .articles {
         padding-bottom: 84px;
+        padding-top: 90px;
         &__item {
             &-top {
                 height: 280px;
@@ -660,6 +664,7 @@
             }
             .link-block {
                 display: block;
+                line-height: 25px;
             }
         }
     }
@@ -708,6 +713,7 @@
     }
     .articles {
         padding-bottom: 40px;
+        padding-top: 50px;
         &__item {
             &:not(:last-child) {
                 margin-bottom: 10px;
@@ -754,6 +760,8 @@
             &-link {
                 width: 254px;
                 margin-top: 25px;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
     }

@@ -111,10 +111,15 @@
 
 .header--small {
     padding-bottom: 0 !important;
+    background-size: 2500px auto;
 }
 
 .header--nobg {
-    background: unset;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 @media screen and (max-width: 1200px) {
